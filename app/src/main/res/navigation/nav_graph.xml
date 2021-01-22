@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/iniciarSesionFragment"
-        android:name="com.company.roomlogin.IniciarSesionFragment"
+        android:name="com.company.mercacarapp.IniciarSesionFragment"
         android:label="fragment_iniciar_sesion"
         tools:layout="@layout/fragment_iniciar_sesion" >
         <action
@@ -19,17 +19,17 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.company.roomlogin.HomeFragment"
+        android:name="com.company.mercacarapp.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/perfilFragment"
-        android:name="com.company.roomlogin.PerfilFragment"
+        android:name="com.company.mercacarapp.PerfilFragment"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" />
     <fragment
         android:id="@+id/registroFragment"
-        android:name="com.company.roomlogin.RegistroFragment"
+        android:name="com.company.mercacarapp.RegistroFragment"
         android:label="fragment_registro"
         tools:layout="@layout/fragment_registro" >
         <action
@@ -38,7 +38,7 @@
     </fragment>
     <fragment
         android:id="@+id/cerrarSesionFragment"
-        android:name="com.company.roomlogin.CerrarSesionFragment"
+        android:name="com.company.mercacarapp.CerrarSesionFragment"
         android:label="fragment_cerrar_sesion"
         tools:layout="@layout/fragment_cerrar_sesion" >
         <action
@@ -47,9 +47,9 @@
     </fragment>
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.company.roomlogin.SplashFragment"
+        android:name="com.company.mercacarapp.CargaFragment"
         android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
+        tools:layout="@layout/fragment_carga" >
         <action
             android:id="@+id/action_splashFragment_to_iniciarSesionFragment"
             app:destination="@id/iniciarSesionFragment"
@@ -58,4 +58,12 @@
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
     </fragment>
+    <fragment
+        android:id="@+id/invitado"
+        android:name="com.company.mercacarapp.IniciarSesionFragment"
+        android:label="fragment_iniciar_sesion"
+        tools:layout="@layout/fragment_iniciar_sesion" />
+    <action
+        android:id="@+id/action_iniciarSesionFragment_to_inicioFragment"
+        app:destination="@id/homeFragment" />
 </navigation>

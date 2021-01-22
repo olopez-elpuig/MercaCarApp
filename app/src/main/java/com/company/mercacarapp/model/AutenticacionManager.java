@@ -1,4 +1,4 @@
-package com.company.roomlogin.model;
+package com.company.mercacarapp.model;
 
 import android.app.Application;
 

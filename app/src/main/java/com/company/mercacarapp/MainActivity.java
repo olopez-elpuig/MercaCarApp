@@ -1,4 +1,4 @@
-package com.company.roomlogin;
+package com.company.mercacarapp;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -15,9 +15,9 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.company.roomlogin.databinding.ActivityMainBinding;
-import com.company.roomlogin.databinding.DrawerHeaderBinding;
-import com.company.roomlogin.model.Usuario;
+import com.company.mercacarapp.databinding.ActivityMainBinding;
+import com.company.mercacarapp.databinding.DrawerHeaderBinding;
+import com.company.mercacarapp.model.Usuario;
 
 public class MainActivity extends AppCompatActivity {
 

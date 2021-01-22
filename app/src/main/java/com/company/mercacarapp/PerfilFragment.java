@@ -1,4 +1,4 @@
-package com.company.roomlogin;
+package com.company.mercacarapp;
 
 import android.os.Bundle;
 
@@ -12,8 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.company.roomlogin.databinding.FragmentPerfilBinding;
-import com.company.roomlogin.model.Usuario;
+import com.company.mercacarapp.databinding.FragmentPerfilBinding;
+import com.company.mercacarapp.model.Usuario;
 
 
 public class PerfilFragment extends Fragment {

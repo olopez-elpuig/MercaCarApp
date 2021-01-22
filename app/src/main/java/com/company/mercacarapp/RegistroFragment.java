@@ -1,4 +1,4 @@
-package com.company.roomlogin;
+package com.company.mercacarapp;
 
 import android.os.Bundle;
 
@@ -15,7 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.company.roomlogin.databinding.FragmentRegistroBinding;
+import com.company.mercacarapp.databinding.FragmentRegistroBinding;
 
 
 public class RegistroFragment extends Fragment {

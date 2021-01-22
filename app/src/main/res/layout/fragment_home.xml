@@ -3,13 +3,265 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/welcome"
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="WELCOME"
-        android:textSize="48sp"/>
+        app:srcCompat="@drawable/image1"
+        tools:ignore="MissingConstraints"
+        android:scaleType="centerCrop"
+        android:contentDescription="TODO" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/seat"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/black"
+                android:background="@drawable/borde_menu_redondo">
+
+                <ImageView
+                    android:id="@+id/add1_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image4" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/peugeot"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/black"
+                android:background="@drawable/borde_menu_redondo">
+
+                <ImageView
+                    android:id="@+id/add2_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image5" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mercedes"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/black"
+                android:background="@drawable/borde_menu_redondo">
+
+                <ImageView
+                    android:id="@+id/add3_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image6" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bmw"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/black"
+                android:background="@drawable/borde_menu_redondo">
+
+                <ImageView
+                    android:id="@+id/add4_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image7" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/renault"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/black"
+                android:background="@drawable/borde_menu_redondo">
+
+                <ImageView
+                    android:id="@+id/add5_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image8" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_noticias"
+            style="@style/noticias" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="326dp"
+        android:layout_height="380dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="270dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="280dp"
+                android:layout_height="250dp"
+                android:layout_margin="23dp"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/add6_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image23" />
+
+                <TextView
+                    android:id="@+id/text_add5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add5_image"
+                    android:layout_gravity="bottom"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="LA NUEVA GAMA CUPRA SALE ESTE 2020\n\n ¡CON NUEVOS MODELOS Y NUEVOS PRECIOS!"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="280dp"
+                android:layout_height="250dp"
+                android:layout_margin="23dp"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/add7_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image24" />
+
+                <TextView
+                    android:id="@+id/text_add6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add5_image"
+                    android:layout_gravity="bottom"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="BMW acaba de lanzar el nuevo acabado M Mesh Edition para su SUV compacto"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="280dp"
+                android:layout_height="250dp"
+                android:layout_margin="23dp"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/add8_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image25" />
+
+                <TextView
+                    android:id="@+id/text_add7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add5_image"
+                    android:layout_gravity="bottom"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Renault Kangoo 2021, los franceses del Rombo avanzan el primer teaser"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="280dp"
+                android:layout_height="250dp"
+                android:layout_margin="23dp"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/add9_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image26" />
+
+                <TextView
+                    android:id="@+id/text_add8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add5_image"
+                    android:layout_gravity="bottom"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Nueva gama PEUGEOT 308 con PEUGEOT i-Cockpit® digital"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </FrameLayout>

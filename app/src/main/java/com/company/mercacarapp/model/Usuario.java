@@ -1,4 +1,4 @@
-package com.company.roomlogin.model;
+package com.company.mercacarapp.model;
 
 import androidx.annotation.NonNull;
 import androidx.room.Entity;

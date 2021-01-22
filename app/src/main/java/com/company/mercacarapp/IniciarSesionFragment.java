@@ -1,4 +1,4 @@
-package com.company.roomlogin;
+package com.company.mercacarapp;
 
 import android.os.Bundle;
 
@@ -15,7 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.company.roomlogin.databinding.FragmentIniciarSesionBinding;
+import com.company.mercacarapp.databinding.FragmentIniciarSesionBinding;
 
 
 public class IniciarSesionFragment extends Fragment {
@@ -41,6 +41,13 @@ public class IniciarSesionFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.action_iniciarSesionFragment_to_registroFragment);
+            }
+        });
+
+        binding.invitado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_iniciarSesionFragment_to_inicioFragment);
             }
         });
 

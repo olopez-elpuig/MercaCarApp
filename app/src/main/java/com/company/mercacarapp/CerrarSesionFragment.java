@@ -1,4 +1,4 @@
-package com.company.roomlogin;
+package com.company.mercacarapp;
 
 import android.os.Bundle;
 
@@ -13,7 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.company.roomlogin.databinding.FragmentCerrarSesionBinding;
+import com.company.mercacarapp.databinding.FragmentCerrarSesionBinding;
 
 public class CerrarSesionFragment extends Fragment {
 

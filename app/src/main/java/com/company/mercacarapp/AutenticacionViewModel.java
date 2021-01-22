@@ -1,4 +1,4 @@
-package com.company.roomlogin;
+package com.company.mercacarapp;
 
 import android.app.Application;
 
@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
-import com.company.roomlogin.model.AutenticacionManager;
-import com.company.roomlogin.model.Usuario;
+import com.company.mercacarapp.model.AutenticacionManager;
+import com.company.mercacarapp.model.Usuario;
 
 public class AutenticacionViewModel extends AndroidViewModel {
 
