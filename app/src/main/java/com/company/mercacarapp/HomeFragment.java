@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.company.mercacarapp.databinding.FragmentHomeBinding;
 
@@ -15,6 +18,7 @@ import com.company.mercacarapp.databinding.FragmentHomeBinding;
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
+    private NavController navController;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -24,11 +28,12 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        navController = NavHostFragment.findNavController(requireParentFragment());
 
         binding.seat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                navController.navigate(R.id.seatMarcas_to_seatModelos);
             }
         });
 

@@ -4,6 +4,8 @@
     <string name="user">User</string>
     <string name="password">Password</string>
     <string name="signin">Sign In</string>
+    <string name="primeramano">Primera Mano</string>
+    <string name="segundamano">Segunda Mano</string>
     <string name="title_activity_menu">MenuActivity</string>
     <string name="title_noticias">Noticias</string>
     <string name="register">Log in</string>

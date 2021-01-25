@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -32,6 +33,8 @@ public class IniciarSesionFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+//        DialogFragment dialogFragment = new DialogFragment();
+  //      dialogFragment.show(getFragmentManager(), "dialog");
         super.onViewCreated(view, savedInstanceState);
 
         autenticacionViewModel = new ViewModelProvider(requireActivity()).get(AutenticacionViewModel.class);

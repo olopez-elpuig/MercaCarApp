@@ -66,4 +66,17 @@
     <action
         android:id="@+id/action_iniciarSesionFragment_to_inicioFragment"
         app:destination="@id/homeFragment" />
+    <action
+        android:id="@+id/seatMarcas_to_seatModelos"
+        app:destination="@+id/seatFragment" />
+    <fragment
+        android:id="@+id/seatFragment"
+        android:name="com.company.mercacarapp.SeatFragment"
+        android:label="fragment_seat"
+        tools:layout="@layout/fragment_seat" />
+    <fragment
+        android:id="@+id/dialogFragment"
+        android:name="com.company.mercacarapp.dialogFragment"
+        android:label="fragment_dialog"
+        tools:layout="@layout/fragment_dialog" />
 </navigation>

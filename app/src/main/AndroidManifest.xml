@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RoomLogin">
-        <activity android:name="com.company.mercacarapp.MainActivity">
+        <activity android:name=".PopModelActivity"
+            android:theme="@style/AppTheme.PopMe"></activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
