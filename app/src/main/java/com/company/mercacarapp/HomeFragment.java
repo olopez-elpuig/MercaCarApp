@@ -52,7 +52,7 @@ public class HomeFragment extends Fragment {
 
         binding.bmw.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { navController.navigate(R.id.homeFragment_to_bmwFragment);
 
             }
         });

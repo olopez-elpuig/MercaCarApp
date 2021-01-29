@@ -45,23 +45,41 @@
             android:textSize="20dp" />
 
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.kusu.loadingbutton.LoadingButton
             android:id="@+id/primeraMano"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/bordes_redondo"
-            android:text="@string/primeramano" />
+            android:layout_width="200dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Primera Mano"
+            android:textColor="@color/white"
+            app:lb_buttonColor="@color/colorPrimary"
+            app:lb_isShadowEnable="true"
+            app:lb_isCircular="true"
+            app:lb_loaderColor="@color/colorAccent"
+            app:lb_shadowColor="@color/colorPrimaryDark"
+            app:lb_shadowHeight="5dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/bordes_redondo"/>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.kusu.loadingbutton.LoadingButton
             android:id="@+id/segundaMano"
-            android:layout_width="150dp"
-            android:layout_height="47dp"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/bordes_redondo"
-            android:text="@string/segundamano" />
+            android:layout_width="200dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Segunda Mano"
+            android:textColor="@color/white"
+            app:lb_buttonColor="@color/colorPrimary"
+            app:lb_isShadowEnable="true"
+            app:lb_isCircular="true"
+            app:lb_loaderColor="@color/colorAccent"
+            app:lb_shadowColor="@color/colorPrimaryDark"
+            app:lb_shadowHeight="5dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/bordes_redondo"/>
 
     </LinearLayout>
 

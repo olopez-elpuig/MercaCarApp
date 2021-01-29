@@ -27,7 +27,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/seat"
-                android:layout_width="120dp"
+                android:layout_width="135dp"
                 android:layout_height="120dp"
                 app:cardCornerRadius="8dp"
                 android:layout_margin="5dp"
@@ -44,7 +44,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/peugeot"
-                android:layout_width="120dp"
+                android:layout_width="135dp"
                 android:layout_height="120dp"
                 app:cardCornerRadius="8dp"
                 android:layout_margin="5dp"
@@ -61,7 +61,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/mercedes"
-                android:layout_width="120dp"
+                android:layout_width="135dp"
                 android:layout_height="120dp"
                 app:cardCornerRadius="8dp"
                 android:layout_margin="5dp"
@@ -78,7 +78,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/bmw"
-                android:layout_width="120dp"
+                android:layout_width="135dp"
                 android:layout_height="120dp"
                 app:cardCornerRadius="8dp"
                 android:layout_margin="5dp"
@@ -95,7 +95,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/renault"
-                android:layout_width="120dp"
+                android:layout_width="135dp"
                 android:layout_height="120dp"
                 app:cardCornerRadius="8dp"
                 android:layout_margin="5dp"

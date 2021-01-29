@@ -121,5 +121,14 @@
     <action
         android:id="@id/homeFragment_to_mercedesFragment"
         app:destination="@id/mercedesFragment"/>
+    <fragment
+        android:id="@+id/bmwFragment"
+        android:name="com.company.mercacarapp.BmwFragment"
+        android:label="fragment_bmw"
+        tools:layout="@layout/fragment_bmw" />
+
+    <action
+        android:id="@id/homeFragment_to_bmwFragment"
+        app:destination="@id/bmwFragment"/>
 
 </navigation>

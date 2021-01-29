@@ -19,6 +19,9 @@ import android.widget.Toast;
 import com.company.mercacarapp.databinding.FragmentDialogBinding;
 import com.company.mercacarapp.databinding.FragmentPerfilBinding;
 import com.company.mercacarapp.databinding.FragmentRegistroBinding;
+import com.kusu.loadingbutton.LoadingButton;
+
+import java.util.zip.Inflater;
 
 public class    DialogFragment extends androidx.fragment.app.DialogFragment {
 
@@ -42,6 +45,8 @@ public class    DialogFragment extends androidx.fragment.app.DialogFragment {
         binding.primeraMano.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                LoadingButton loadingButton = (LoadingButton) getView().findViewById(R.id.primeraMano);
+                loadingButton.showLoading();
                 navController.navigate(R.id.action_dialogFragment_to_ibizaPmFragment);
 
             }
@@ -50,6 +55,8 @@ public class    DialogFragment extends androidx.fragment.app.DialogFragment {
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.dialogFragment_to_ibizaSm2Fragment);
+                LoadingButton loadingButton = (LoadingButton) getView().findViewById(R.id.segundaMano);
+                loadingButton.showLoading();
             }
         });
     }
