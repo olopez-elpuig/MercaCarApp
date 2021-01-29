@@ -76,7 +76,41 @@
         tools:layout="@layout/fragment_seat" />
     <fragment
         android:id="@+id/dialogFragment"
-        android:name="com.company.mercacarapp.dialogFragment"
+        android:name="com.company.mercacarapp.DialogFragment"
         android:label="fragment_dialog"
         tools:layout="@layout/fragment_dialog" />
+        <action
+            android:id="@+id/action_dialogFragment_to_ibizaPmFragment"
+            app:destination="@+id/ibizaPmFragment" />
+
+    <fragment
+        android:id="@+id/ibizaPmFragment"
+        android:name="com.company.mercacarapp.IbizaPmFragment"
+        android:label="fragment_ibiza_pm"
+        tools:layout="@layout/fragment_ibiza_pm" />
+    <action
+        android:id="@+id/seatFragment_to_dialogFragment"
+        app:destination="@id/dialogFragment" />
+    <fragment
+        android:id="@+id/ibizaSm2Fragment"
+        android:name="com.company.mercacarapp.IbizaSm2Fragment"
+        android:label="fragment_ibiza_sm2"
+        tools:layout="@layout/fragment_ibiza_sm2" />
+
+    <action
+        android:id="@+id/dialogFragment_to_ibizaSm2Fragment"
+        app:destination="@+id/ibizaSm2Fragment" />
+    <fragment
+        android:id="@+id/peugeotFragment"
+        android:name="com.company.mercacarapp.PeugeotFragment"
+        android:label="fragment_peugeot"
+        tools:layout="@layout/fragment_peugeot" />
+
+    <action
+        android:id="@+id/peugeotFragment_to_dialogFragment"
+        app:destination="@+id/dialogFragment"/>
+
+    <action
+        android:id="@+id/homeFragment_to_peugeotFragment"
+        app:destination="@id/peugeotFragment"/>
 </navigation>

@@ -35,15 +35,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/image4" />
+                android:src="@drawable/image5" />
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_width="250dp"
+            android:layout_width="280dp"
             android:layout_height="66dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:text="BIENVENIDO A LA CATEGORIA DE SEAT" />
+            android:text="BIENVENIDO A LA CATEGORIA DE PEUGEOT" />
 
 
     </LinearLayout>
@@ -69,7 +69,7 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/ibiza"
+                android:id="@+id/ciento8"
                 android:layout_width="125dp"
                 android:layout_height="65dp"
                 android:layout_margin="5dp"
@@ -83,18 +83,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/image11" />
+                    android:src="@drawable/image30" />
             </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
-                android:text="Ibiza" />
+                android:text="108" />
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/leon"
+                android:id="@+id/Tres8"
                 android:layout_width="125dp"
                 android:layout_height="65dp"
                 android:layout_marginLeft="195dp"
@@ -108,17 +108,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/image12" />
+                    android:src="@drawable/image31" />
             </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="250dp"
-                android:text="León" />
+                android:text="308" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/arona"
+                android:id="@+id/suv3008"
                 android:layout_width="125dp"
                 android:layout_height="65dp"
                 android:layout_marginLeft="5dp"
@@ -132,17 +132,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/image13" />
+                    android:src="@drawable/image32" />
             </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:text="Arona" />
+                android:layout_marginLeft="40dp"
+                android:text="SUV 3008" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/ateca"
+                android:id="@+id/cinco08"
                 android:layout_width="125dp"
                 android:layout_height="65dp"
                 android:layout_marginLeft="195dp"
@@ -156,38 +156,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/image14" />
+                    android:src="@drawable/image33" />
             </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="250dp"
-                android:text="Ateca" />
+                android:text="508" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/alhambra"
-                android:layout_width="125dp"
-                android:layout_height="65dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="52dp"
-                android:background="@drawable/borde_menu_redondo"
-                android:backgroundTint="@color/white"
-                app:cardCornerRadius="8dp">
-
-                <ImageView
-                    android:id="@+id/add6_image"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/image15" />
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:text="Alhambra" />
         </LinearLayout>
 
     </ScrollView>

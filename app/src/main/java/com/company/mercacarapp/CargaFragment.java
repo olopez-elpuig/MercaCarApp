@@ -1,5 +1,6 @@
 package com.company.mercacarapp;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -36,7 +38,7 @@ public class CargaFragment extends Fragment {
         navController = Navigation.findNavController(view);
 
         // esta variable deberia estar en un ViewModel
-        MutableLiveData<Boolean> finishedLoading = new MutableLiveData<>();
+        final MutableLiveData<Boolean> finishedLoading = new MutableLiveData<>();
 
 
         finishedLoading.observe(getViewLifecycleOwner(), new Observer<Boolean>() {

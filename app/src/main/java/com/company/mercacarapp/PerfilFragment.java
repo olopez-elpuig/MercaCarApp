@@ -35,8 +35,8 @@ public class PerfilFragment extends Fragment {
         autenticacionViewModel.usuarioAutenticado.observe(getViewLifecycleOwner(), new Observer<Usuario>() {
             @Override
             public void onChanged(Usuario usuario) {
-                binding.username.setText(usuario.username);
-                binding.biography.setText(usuario.biography);
+                binding.username.setPrefixText(usuario.username);
+                binding.biography.setPrefixText(usuario.biography);
             }
         });
     }

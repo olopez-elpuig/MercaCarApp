@@ -1,6 +1,5 @@
 package com.company.mercacarapp;
 
-import android.app.AlertDialog;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,25 +8,21 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.company.mercacarapp.databinding.FragmentIbizaPmBinding;
+import com.company.mercacarapp.databinding.FragmentPeugeotBinding;
 import com.company.mercacarapp.databinding.FragmentSeatBinding;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link SeatFragment#newInstance} factory method to
+ * Use the {@link PeugeotFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SeatFragment extends Fragment {
+public class PeugeotFragment extends Fragment {
 
-    private FragmentSeatBinding binding;
+    private FragmentPeugeotBinding binding;
     private NavController navController;
 
     // TODO: Rename parameter arguments, choose names that match
@@ -39,7 +34,7 @@ public class SeatFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public SeatFragment() {
+    public PeugeotFragment() {
         // Required empty public constructor
     }
 
@@ -49,11 +44,11 @@ public class SeatFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment SeatFragment.
+     * @return A new instance of fragment PeugeotFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static SeatFragment newInstance(String param1, String param2) {
-        SeatFragment fragment = new SeatFragment();
+    public static PeugeotFragment newInstance(String param1, String param2) {
+        PeugeotFragment fragment = new PeugeotFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -74,7 +69,7 @@ public class SeatFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return (binding = FragmentSeatBinding.inflate(inflater, container, false)).getRoot();
+        return (binding = FragmentPeugeotBinding.inflate(inflater, container, false)).getRoot();
     }
 
 
@@ -84,10 +79,10 @@ public class SeatFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         navController = NavHostFragment.findNavController(requireParentFragment());
 
-        binding.ibiza.setOnClickListener(new View.OnClickListener() {
+        binding.ciento8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.seatFragment_to_dialogFragment);
+                navController.navigate(R.id.peugeotFragment_to_dialogFragment);
 
             }
         });

@@ -11,6 +11,13 @@
         android:title="Perfil" />
 
     <item
+        android:id="@+id/conversacionFragment"
+        android:icon="@drawable/comment"
+        android:title="Conversaciones" />
+
+
+    <item
         android:id="@+id/cerrarSesionFragment"
-        android:title="Cerrar sesión" />
+        android:title="Cerrar sesión"
+        android:icon="@drawable/close_big"/>
 </menu>

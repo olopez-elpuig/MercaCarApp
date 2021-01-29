@@ -26,7 +26,7 @@ public class AutenticacionManager {
         dao = AppBaseDeDatos.getInstance(application).obtenerDao();
     }
 
-    public void iniciarSesion(String username, String password, IniciarSesionCallback callback){
+    public void iniciarSesion(final String username, final String password, final IniciarSesionCallback callback){
         executor.execute(new Runnable() {
             @Override
             public void run() {
@@ -41,7 +41,7 @@ public class AutenticacionManager {
         });
     }
 
-    public void crearCuenta(String username, String password, String biography, RegistrarCallback callback) {
+    public void crearCuenta(final String username, final String password, final String biography, final RegistrarCallback callback) {
         executor.execute(new Runnable() {
             @Override
             public void run() {

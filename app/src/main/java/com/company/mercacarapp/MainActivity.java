@@ -1,8 +1,10 @@
 package com.company.mercacarapp;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,6 +20,8 @@ import androidx.navigation.ui.NavigationUI;
 import com.company.mercacarapp.databinding.ActivityMainBinding;
 import com.company.mercacarapp.databinding.DrawerHeaderBinding;
 import com.company.mercacarapp.model.Usuario;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
