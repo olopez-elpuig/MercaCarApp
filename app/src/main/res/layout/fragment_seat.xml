@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SeatFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/image1"
+        tools:ignore="MissingConstraints"
+        android:scaleType="centerCrop"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/seat"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/borde_menu_redondo"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/add1_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image4" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="BIENVENIDO A LA CATEGORIA DE SEAT" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="170dp"
+        android:text="MODELOS" />
+    <ScrollView
+        android:layout_width="326dp"
+        android:layout_height="310dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ibiza"
+                android:layout_width="125dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="140dp"
+                android:background="@drawable/borde_menu_redondo"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/add2_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image11" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Ibiza" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/leon"
+                android:layout_width="125dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="195dp"
+                android:layout_marginTop="-89dp"
+                android:background="@drawable/borde_menu_redondo"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/add3_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image12" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:text="León" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/arona"
+                android:layout_width="125dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/borde_menu_redondo"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/add4_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image13" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Arona" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ateca"
+                android:layout_width="125dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="195dp"
+                android:layout_marginTop="-85dp"
+                android:background="@drawable/borde_menu_redondo"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/add5_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image14" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:text="Ateca" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/alhambra"
+                android:layout_width="125dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/borde_menu_redondo"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/add6_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image15" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Alhambra" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
