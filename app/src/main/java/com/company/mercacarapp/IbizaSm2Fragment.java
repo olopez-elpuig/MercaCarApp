@@ -9,6 +9,8 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.company.mercacarapp.databinding.FragmentIbizaSm2Binding;
 import com.company.mercacarapp.databinding.FragmentSeatBinding;
@@ -16,6 +18,7 @@ import com.ramotion.foldingcell.FoldingCell;
 public class IbizaSm2Fragment extends Fragment {
 
     private FragmentIbizaSm2Binding binding;
+    private NavController navController;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -28,6 +31,29 @@ public class IbizaSm2Fragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        navController = NavHostFragment.findNavController(requireParentFragment());
+
+        binding.contacto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.conversacionFragment);
+
+            }
+        });
+        binding.contacto2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.conversacionFragment);
+
+            }
+        });
+        binding.contacto3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.conversacionFragment);
+
+            }
+        });
 
         // get our folding cell
         final FoldingCell fc = (FoldingCell) view.findViewById(R.id.folding_cell_1);

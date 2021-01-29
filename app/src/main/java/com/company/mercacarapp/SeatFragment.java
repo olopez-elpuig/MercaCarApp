@@ -28,7 +28,7 @@ import com.company.mercacarapp.databinding.FragmentSeatBinding;
 public class SeatFragment extends Fragment {
 
     private FragmentSeatBinding binding;
-    private NavController navController;
+            private NavController navController;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

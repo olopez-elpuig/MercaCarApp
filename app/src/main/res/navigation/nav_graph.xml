@@ -130,5 +130,10 @@
     <action
         android:id="@id/homeFragment_to_bmwFragment"
         app:destination="@id/bmwFragment"/>
+    <fragment
+        android:id="@+id/conversacionFragment"
+        android:name="com.company.mercacarapp.ConversacionFragment"
+        android:label="fragment_conversacion"
+        tools:layout="@layout/fragment_conversacion" />
 
 </navigation>
