@@ -33,6 +33,7 @@ public class IbizaSm2Fragment extends Fragment {
         final FoldingCell fc = (FoldingCell) view.findViewById(R.id.folding_cell_1);
         final FoldingCell fc2 = (FoldingCell) view.findViewById(R.id.folding_cell_2);
         final FoldingCell fc3 = (FoldingCell) view.findViewById(R.id.folding_cell_3);
+        final FoldingCell fc4 = (FoldingCell) view.findViewById(R.id.folding_cell_4);
 
 
         // attach click listener to toast btn
@@ -57,6 +58,14 @@ public class IbizaSm2Fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 fc3.toggle(true);
+            }
+        });
+
+        final Button toggleInstantlyBtn4 = (Button) view.findViewById(R.id.toggle_instant_btn4);
+        toggleInstantlyBtn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fc4.toggle(true);
             }
         });
     }
